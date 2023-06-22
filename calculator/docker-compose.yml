@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  mail-automation:
+    privileged: true
+    restart: always    
+    environment:
+        - TZ=Asia/Kolkata
+        - FLOWS=mailAutomation.json
+    ports:
+        - "2000:1880"
+    container_name: mail-automation
+    image: 'docker-registry.fliplabs.net/mail-automation'
+    hostname: mail-automation
+    privileged: true
+ 

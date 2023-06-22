@@ -1,0 +1,15 @@
+iapps-gtl-warehousemw       
+iapps-gtl-toolsmanagementmw                       
+iapps-gtl-rolemanagementmw                        
+iapps-gtl-qualitycheckmw                          
+iapps-gtl-productionmw                            
+iapps-gtl-pomw                                    
+iapps-gtl-mastermw                               
+iapps-gtl-manufacturingmw                         
+iapps-gtl-labelprintmw                            
+iapps-gtl-goodsreceiptmw                          
+iapps-gtl-commonservicemw                         
+iapps-gtl-coamw                                   
+iapps-gtl-authmw                               
+iapps-gtl-fe                                     
+iapps-gtl-adminservicemw

@@ -1,0 +1,83 @@
+body{
+    background:url(../images/calc2.png)
+}
+
+.cal-container {/*whole calculator */
+width: 400px;
+position: absolute; /* container position*/
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);/*move horizontal or vertical direction*/
+}
+.calc-display{
+    border: 1px solid black;/* calculator border colour*/
+    height: 63px;
+    background: white;
+    border-radius: 5px;/*rounds the courners of box*/
+    box-shadow: -3px -1px 4px #c57a14;/*add shadow effect around element frame*/
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: 500;
+    font-style: italic;
+    text-align:end;
+    color:#917411;
+    padding: 2px;
+ }
+.calc-frame{
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; /*font selection*/
+
+}
+  .presskey{
+   float: left;   
+   height: 50px;
+   line-height: 50px;
+   width: 94px; 
+   border-radius: 5px;
+   background: black;
+   margin: 3px; /* gives margin for all elements*/
+   font-size: 24px;
+   text-align: center;
+   box-shadow: -2px 2px grey;
+   cursor: pointer;
+ }
+
+.equal{
+    width: 194px;
+    float: left;
+}
+
+.dot{
+    height: 106px;
+transform:translateY(-56px);/*translateY means moves from y axis*/
+
+}
+.date{
+    /*border: 1px solid black;*/
+    height: 22px;
+    /*background:#250b3b;*/
+    border-radius: 10px; 
+    width: 270px;
+    position: absolute;
+    top: 3%;
+    left: 83%;
+    color: #e29e07;
+    text-shadow: 0.5px 0.5px #6d5d5d;
+
+  }
+  
+  .answer{
+   /* border: 1px solid black;/* calculator border colour*/
+    height: 53px;
+    border-radius: 5px;/*rounds the courners of box*/
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: 500;
+    font-style:normal;
+    text-align:end;
+    color:#340361;
+    font-weight: bold;
+
+
+  }
