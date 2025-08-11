@@ -1,9 +1,143 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>sreejith-page</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sreejith Chiyyanoor — Welcome</title>
+  <meta name="description" content="A beautifully styled sample webpage by Sreejith Chiyyanoor, showcasing how to easily host and share projects using GitHub Pages." />
+  <style>
+    :root{
+      --bg1: #0f172a;
+      --bg2: #0b1220;
+      --accent: #6ee7b7;
+      --muted: #9aa4b2;
+      --card: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.06);
+      --radius: 14px;
+      --page-padding: 24px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing: border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background: linear-gradient(180deg,var(--bg1) 0%, var(--bg2) 100%);
+      color: #e6eef6;
+      display:grid;
+      place-items:center;
+      padding:40px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      width:100%;
+      max-width:900px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      backdrop-filter: blur(6px) saturate(120%);
+      border: 1px solid rgba(255,255,255,0.03);
+      display:grid;
+      gap:18px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+    .logo{
+      width:64px;height:64px;border-radius:12px;
+      background: linear-gradient(135deg, #2dd4bf, #60a5fa);
+      display:grid;place-items:center;font-weight:700;color:#06202b;font-size:20px;
+      box-shadow: 0 6px 18px rgba(45,212,191,0.12);
+    }
+
+    h1{margin:0;font-size:22px;letter-spacing:0.2px}
+    p.lead{margin:0;color:var(--muted);font-size:15px}
+
+    .hero{
+      display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding-top:6px;
+    }
+
+    .content{
+      flex:1 1 420px;
+    }
+
+    .card{
+      background: var(--card);
+      padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .big{
+      font-size:28px;margin:0 0 8px 0;color:#ffffff;font-weight:600;
+    }
+
+    .sub{color:var(--muted);margin:0 0 14px 0}
+
+    .btn-row{display:flex;gap:12px;flex-wrap:wrap}
+
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid transparent;
+      background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      color:inherit;cursor:pointer;transition:all .18s ease;
+    }
+
+    .btn.primary{background:linear-gradient(90deg,#10b981,#06b6d4);color:#022;box-shadow:0 8px 20px rgba(6,182,185,0.12)}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+    .btn:hover{transform:translateY(-3px)}
+
+    .preview{
+      min-width:260px;flex:0 0 260px;
+      display:grid;place-items:center;padding:10px;border-radius:10px;background:var(--glass);height:140px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    footer{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;padding-top:6px;flex-wrap:wrap;gap:10px}
+
+    @media (max-width:680px){
+      .hero{flex-direction:column}
+      .preview{width:100%;flex:1 1 auto}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">SC</div>
+      <div>
+        <h1>Sreejith Chiyyanoor</h1>
+        <p class="lead">A tiny, elegant sample page to host on GitHub Pages.</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="content card">
+        <p class="big">Sreejith chiyyanoor welcomes you.</p>
+        <p class="sub">This is just a sample project that can host a web page on GitHub.</p>
+
+        <div class="btn-row">
+          <a class="btn primary" href="#" onclick="alert('Replace \\u0022#\\u0022 with your GitHub repo or Pages URL')">View on GitHub</a>
+          <a class="btn ghost" href="#" onclick="navigator.clipboard?.writeText(window.location.href).then(()=>alert('URL copied'))">Copy page URL</a>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div style="text-align:center">
+          <div style="font-weight:700;font-size:18px">Ready for GitHub Pages</div>
+          <div style="color:var(--muted);margin-top:6px">Drop this file into a repository and enable Pages</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Minimal • Responsive • GitHub Pages ready</div>
+      <div>© 2025 Sreejith Chiyyanoor. All rights reserved.</div>
+    </footer>
+  </main>
+</body>
 </html>
